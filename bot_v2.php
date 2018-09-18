@@ -1,10 +1,9 @@
 <?php
-$cf = 'faa1509f';
-$tk = 'd3635555af85466bec7a0b7486e77417bd718c023a64c0ac5b7a601e4bd1c595b8a395d37934d0302b643';
-$ms = '';
-$vr = '5.85';
+$cf = 'confirmation key';
+$tk = 'token group';
+$vr = '5.85'; //version VK API
 
-$data = json_decode(file_get_contents('php://input'));
+$data = json_decode(file_get_contents('php://input')); //Принимаем входящие параметры
 
 switch ($data->type) {
   case 'confirmation':
